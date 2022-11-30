@@ -1,2 +1,3 @@
 # autotest_course
-Course homeworks
+Курс по авто тестированию на python.
+Здесь размещаю свои домашние задания.
