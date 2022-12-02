@@ -7,7 +7,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
-from autotest_course.functions import calc
+from autotest_course.calculate import calc
 
 driver = webdriver.Chrome()
 driver.get("http://suninjuly.github.io/selects1.html")

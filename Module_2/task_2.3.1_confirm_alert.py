@@ -1,7 +1,12 @@
-import math
+# Открыть страницу
+# Нажать кнопку
+# Принять confirm
+# На новой странице решить капчу для роботов
+
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from autotest_course.calculate import calc
 
 browser = webdriver.Chrome()
 browser.get("http://suninjuly.github.io/alert_accept.html")
@@ -14,11 +19,6 @@ alert.accept()
 
 x = browser.find_element(By.ID, "input_value")
 value = x.text
-
-
-def calc(x_value):
-    return str(math.log(abs(12 * math.sin(int(x_value)))))
-
 
 result = calc(value)
 input_answer = browser.find_element(By.ID, "answer")
