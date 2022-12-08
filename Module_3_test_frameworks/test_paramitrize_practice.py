@@ -33,9 +33,9 @@ def click_login(browser):
 
 def fill_login_form(browser):
     email_filed = browser.find_element(By.ID, "id_login_email")
-    email_filed.send_keys("vorobiov.bohdan@gmail.com")
+    email_filed.send_keys("********")
     password_field = browser.find_element(By.ID, "id_login_password")
-    password_field.send_keys("p4$$F0rK3k")
+    password_field.send_keys("********")
 
 
 def click_form_login_button(browser):
