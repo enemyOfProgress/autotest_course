@@ -4,13 +4,13 @@ from selenium.webdriver.common.by import By
 
 link = "http://selenium1py.pythonanywhere.com/"
 
-# Фикстура, которая открывает бразуер для каждого теста в классе.
-# Результат фикстуры передаем как параметры в функцию.
-@pytest.fixture()
-def browser():
-    print("\nstart browser for test")
-    browser = webdriver.Chrome()
-    return browser
+# # Фикстура, которая открывает бразуер для каждого теста в классе.
+# # Результат фикстуры передаем как параметры в функцию.
+# @pytest.fixture()
+# def browser():
+#     print("\nstart browser for test")
+#     browser = webdriver.Chrome()
+#     return browser
 
 
 class TestMainPage1():

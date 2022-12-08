@@ -5,15 +5,15 @@ from selenium.webdriver.common.by import By
 link = "http://selenium1py.pythonanywhere.com/"
 
 
-# Фикстура, которая выполняется один раз в рамках класса.
-# Например, в данном случае, браузер запуститься один раз и в нем будут произведены все тесты из класса.
-@pytest.fixture(scope="class")
-def browser():
-    print("\nstart browser for test")
-    browser = webdriver.Chrome()
-    yield browser
-    print("\nquit browser")
-    browser.quit()
+# # Фикстура, которая выполняется один раз в рамках класса.
+# # Например, в данном случае, браузер запуститься один раз и в нем будут произведены все тесты из класса.
+# @pytest.fixture(scope="class")
+# def browser():
+#     print("\nstart browser for test")
+#     browser = webdriver.Chrome()
+#     yield browser
+#     print("\nquit browser")
+#     browser.quit()
 
 
 class TestMainPage1():
